@@ -39,11 +39,11 @@ const Hero = () => {
                 </div>
 
                 <div className="mx-auto lg:px-20 px-10 flex mt-20 w-fit">
-                    <div className="w-full text-center lg:text-left relative z-10 mt-10">
-                        <h2 className='uppercase text-myorange font-poppins font-medium'>Your insurance is here</h2>
-                        <h1 className='md:text-7xl font-inter font-bold max-w-[32rem] mt-3 mx-auto lg:mx-0 text-5xl'>A Moments of Caring Future.</h1>
+                    <div className="w-full text-center lg:text-left relative z-10 mt-10 2xl:mt-20">
+                        <h2 className='uppercase text-myorange font-poppins font-medium 2xl:text-xl'>Your insurance is here</h2>
+                        <h1 className='2xl:max-w-[45rem]  2xl:text-8xl md:text-7xl font-inter font-bold max-w-[32rem] mt-3 mx-auto lg:mx-0 text-5xl'>A Moments of Caring Future.</h1>
 
-                        <p className="text-mygrey max-w-[25rem] font-poppins mt-5 text-lg mx-auto lg:mx-0">Insurance for everything right here. Caring You because your Life is important.</p>
+                        <p className="text-mygrey max-w-[25rem] font-poppins mt-5 text-lg mx-auto lg:mx-0 2xl:text-xl 2xl:max-w-[28rem]">Insurance for everything right here. Caring You because your Life is important.</p>
 
                         <a href="" target="_blank" rel="noopener noreferrer">
                             <button className="bg-button px-10 py-4 rounded-md text-sm mt-10 font-semibold font-poppins shadow-buttonShadow">
