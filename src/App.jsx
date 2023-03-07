@@ -5,6 +5,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import About from './views/About'
 import Features from './views/Features'
 import Hero from './views/Hero'
+import Tokenomics from './views/Tokenomics'
+import Roadmap from './views/Roadmap'
 
 
 
@@ -18,7 +20,7 @@ const App = () => {
             setVantaEffect(NET({
                 el: myRef.current,
                 mouseControls: false,
-                touchControls: true,
+                touchControls: false,
                 gyroControls: false,
                 minHeight: 200.00,
                 minWidth: 200.00,
@@ -46,6 +48,8 @@ const App = () => {
             <Hero />
             <About />
             <Features />
+            <Tokenomics />
+            <Roadmap />
         </div>
     )
 }
