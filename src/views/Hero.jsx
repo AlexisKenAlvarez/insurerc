@@ -19,7 +19,7 @@ const Hero = () => {
     const opacity = useTransform(opacitySpring, [0.1, 0.7], [1, 0])
 
     return (
-        <section className=" h-screen w-full py-20 text-white flex items-center justify-center relative" ref={ref}>
+        <section className=" h-screen w-full py-20 text-white flex items-center justify-center relative" ref={ref} id="home">
             <motion.div className="w-full h-screen fixed flex items-center justify-center" style={{ opacity }}>
                 <div id="Circles">
                     <div className="w-[13rem] h-[13rem] bg-[#800e6b] rounded-full shadow-pinkGlowTop absolute left-[30%] top-0 -translate-y-1/2"></div>

@@ -33,7 +33,7 @@ const Features = () => {
     ]
 
     return (
-        <section className="w-full h-auto relative font-inter text-white py-20">
+        <section className="w-full h-auto relative font-inter text-white py-20" id="features">
             {/* <img src="/stars.webp" alt="stars" className="object-cover w-full h-full z-0 top-0 left-0 fixed" /> */}
 
             <div className="max-w-[1500px] mx-auto w-full relative z-10 px-8">

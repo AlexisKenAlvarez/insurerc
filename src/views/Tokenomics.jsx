@@ -27,7 +27,7 @@ const Tokenomics = () => {
     ]
 
     return (
-        <section className="w-full h-auto py-20 text-white font-inter z-10 relative">
+        <section className="w-full h-auto py-20 text-white font-inter z-10 relative" id="tokenomics">
             <div className="w-fit mx-auto flex gap-x-24 lg:flex-row flex-col">
                 <div className="relative sm:w-[20rem] w-[15rem] h-[24rem] mx-auto lg:mx-0">
                     <motion.img initial={{y:0}} animate={{y: 50}} transition={{duration: 1.5, repeat: Infinity, repeatType: "reverse", repeatDelay: 0.5, type: 'spring'}} src="/coin.webp" alt="coin" className="absolute w-full left-0 right-0" />

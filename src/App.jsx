@@ -7,6 +7,7 @@ import Features from './views/Features'
 import Hero from './views/Hero'
 import Tokenomics from './views/Tokenomics'
 import Roadmap from './views/Roadmap'
+import Nav from './components/Nav'
 
 
 
@@ -40,11 +41,13 @@ const App = () => {
     }, [vantaEffect])
 
     return (
-        <div className='bg-hero'>
-
+        <div className='bg-hero relative'>
+            
             <div className="fixed w-full h-screen left-0 top-0 z-0" ref={myRef}>
 
             </div>
+
+            <Nav />
             <Hero />
             <About />
             <Features />
