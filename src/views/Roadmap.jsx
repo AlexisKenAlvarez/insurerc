@@ -56,12 +56,23 @@ const Roadmap = () => {
         ]
     };
 
+    const options = {
+        triggerOnce: true,
+        threshold: 0.5
+    }
+
+    const [howRef, howView] = useInView(options)
+
     return (
         <section className='w-full h-auto py-28 text-white font-inter z-10 relative' id="roadmap">
             <div className="max-w-[1600px] w-full mx-auto px-10">
 
-                <h2 className='text-myorange font-poppins font-medium text-center'>OUR PATH</h2>
-                <h1 className='md:text-6xl text-4xl font-extrabold text-center' ref={titleRef}>ROADMAP</h1>
+                <motion.h2 initial={{ opacity: 0 }} animate={howView ? { opacity: 100, y: [50, 0] } : {}} transition={{ duration: 0.8 }} className='text-myorange font-poppins font-medium text-center' ref={howRef}>OUR PATH</motion.h2>
+                
+                <div className="overflow-hidden">
+                    <motion.h1 initial={{ opacity: 0 }} animate={titleView ? { opacity: 100, y: [50, 0] } : {}} transition={{ duration: 0.8 }} className='md:text-6xl text-4xl font-extrabold text-center' ref={titleRef}>ROADMAP</motion.h1>
+                </div>
+
 
                 <div className="mx-auto flex gap-x-10">
                     <Slider {...settings} className="xl:w-[80rem] 2xl:w-[85rem] mx-auto lg:w-[60rem] sm:w-[25rem] w-[19rem]">

@@ -20,7 +20,7 @@ module.exports = {
         blueGlow: '0px 0px 35px 1px rgba(0,254,231,1)',
         pinkGlow: '0px 0px 35px 1px rgba(246,4,204,1)',
         buttonShadow: '5px 5px 0px 0px rgba(113,157,255,1)',
-        featureGlow: '0px 0px 70px -14px rgba(0,254,231,0.25)'
+        featureGlow: '0px 0px 70px -14px rgba(0,254,231,0.45)'
 
       },
       fontFamily: {

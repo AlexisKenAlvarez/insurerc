@@ -8,6 +8,7 @@ import Hero from './views/Hero'
 import Tokenomics from './views/Tokenomics'
 import Roadmap from './views/Roadmap'
 import Nav from './components/Nav'
+import Footer from './views/Footer'
 
 
 
@@ -42,7 +43,7 @@ const App = () => {
 
     return (
         <div className='bg-hero relative'>
-            
+
             <div className="fixed w-full h-screen left-0 top-0 z-0" ref={myRef}>
 
             </div>
@@ -53,6 +54,7 @@ const App = () => {
             <Features />
             <Tokenomics />
             <Roadmap />
+            <Footer />
         </div>
     )
 }

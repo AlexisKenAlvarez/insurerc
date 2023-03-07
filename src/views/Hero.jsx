@@ -1,14 +1,35 @@
-import React, { useRef } from 'react'
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
+import React, { useRef, useEffect } from 'react'
+import { motion, useScroll, useTransform, useSpring, useAnimation } from 'framer-motion'
+
 
 const Hero = () => {
 
     const ref = useRef(null)
 
+    const animation = useAnimation()
+
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["end end", "end start"]
     })
+
+    async function sequence() {
+        await animation.start({ scale: 1, transition: { duration: 1.5, type: 'spring' } })
+        animation.start({
+            scale: [1, 1.05],
+            transition: {
+                repeat: Infinity,
+                ease: 'easeInOut',
+                repeatType: 'reverse',
+                duration: 2,
+                type: 'spring'
+            }
+        })
+    }
+
+    useEffect(() => {
+        sequence()
+    }, [])
 
     const opacitySpring = useSpring(scrollYProgress, {
         stiffness: 100,
@@ -39,23 +60,24 @@ const Hero = () => {
                 </div>
 
                 <div className="mx-auto lg:px-20 px-10 flex mt-20 w-fit">
-                    <div className="w-full text-center lg:text-left relative z-10 mt-10 2xl:mt-20">
-                        <h2 className='uppercase text-myorange font-poppins font-medium 2xl:text-xl'>Your insurance is here</h2>
-                        <h1 className='2xl:max-w-[45rem]  2xl:text-8xl md:text-7xl font-inter font-bold max-w-[32rem] mt-3 mx-auto lg:mx-0 text-5xl'>A Moments of Caring Future.</h1>
+                    <div className="w-full text-center lg:text-left relative z-10 lg:mt-10 2xl:mt-20">
+                        <motion.h2 initial={{ opacity: 0, y: 100 }} animate={{ opacity: [0, 100], y: 0 }} transition={{ duration: 1.5, type: 'spring' }} className='uppercase text-myorange font-poppins font-medium 2xl:text-xl'>Your insurance is here</motion.h2>
+                        <motion.h1 initial={{ opacity: 0, y: 100 }} animate={{ opacity: 100, y: 0 }} transition={{ duration: 1.5, type: 'spring', delay: 0.1 }} className='2xl:max-w-[45rem]  2xl:text-8xl md:text-7xl font-inter font-bold max-w-[32rem] mt-3 mx-auto lg:mx-0 text-5xl'>A Moments of Caring Future.</motion.h1>
 
-                        <p className="text-mygrey max-w-[25rem] font-poppins mt-5 text-lg mx-auto lg:mx-0 2xl:text-xl 2xl:max-w-[28rem]">Insurance for everything right here. Caring You because your Life is important.</p>
+                        <motion.p initial={{ opacity: 0, y: 100 }} animate={{ opacity: 100, y: 0 }} transition={{ duration: 1.5, type: 'spring', delay: 0.15 }} className="text-mygrey max-w-[25rem] font-poppins mt-5 text-lg mx-auto lg:mx-0 2xl:text-xl 2xl:max-w-[28rem]">Insurance for everything right here. Caring You because your Life is important.</motion.p>
 
                         <a href="" target="_blank" rel="noopener noreferrer">
-                            <button className="bg-button px-10 py-4 rounded-md text-sm mt-10 font-semibold font-poppins shadow-buttonShadow">
-                                BUY TOKEN
-                            </button>
+                            <motion.button initial={{ opacity: 0, y: 100 }} animate={{ opacity: 100, y: 0 }} transition={{ duration: 1.5, type: 'spring', delay: 0.2 }} className="bg-button px-10 py-4 group rounded-md text-sm mt-10 font-semibold font-poppins hover:shadow-buttonShadow relative transition-shadow ease-in-out duration-300">
+                                <div className="absolute w-full h-full bg-white left-0 top-0 rounded-md bg-gradient-to-br from-myblue to-mypink transition-all ease-in-out duration-300 opacity-0 pointer-events-none group-hover:opacity-100"></div>
+                                <p className="relative z-10">BUY TOKEN</p>
+                            </motion.button>
                         </a>
 
 
                     </div>
 
                     <div className="w-full lg:block hidden">
-                        <img src="/hero.webp" alt="Hero" className="w-[70vh]" />
+                        <motion.img initial={{scale: 0}} animate={animation} src="/hero.webp" alt="Hero" className="w-[70vh] origin-bottom" />
                     </div>
 
                 </div>
