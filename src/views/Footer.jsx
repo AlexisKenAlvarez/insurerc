@@ -9,12 +9,12 @@ const Footer = () => {
         <footer className='gap-y-14 w-full h-auto bg-hero z-10 relative text-white px-20 py-[5rem] flex lg:justify-between lg:flex-row flex-col-reverse justify-center items-center bg-contain bg-earth bg-center bg-no-repeat' >
             <div className="w-full">
                 <div className="flex items-center gap-x-3 justify-center lg:justify-start">
-                    {/* <img src="/logo.webp" alt="Logo" className="w-12" /> */}
-                    <div className="h-10 w-10 bg-gradient-to-br from-myblue to-mypink rounded-full"></div>
+                    <img src="/logo.webp" alt="Logo" className="w-12" />
+                    {/* <div className="h-10 w-10 bg-gradient-to-br from-myblue to-mypink rounded-full"></div> */}
 
-                    <h1 className='font-saira text-2xl font-bold'>InsurERC</h1>
+                    <h1 className='font-saira text-2xl font-bold'>ShibaENS</h1>
                 </div>
-                <p className='font-poppins text-sm opacity-60 mt-4 text-center lg:text-left'>© 2023 InsurERC. All Rights Reserved</p>
+                <p className='font-poppins text-sm opacity-60 mt-4 text-center lg:text-left'>© 2023 ShibaENS. All Rights Reserved</p>
             </div>
 
             <div className="w-full flex flex-col lg:mt-0 text-right lg:items-end items-center">

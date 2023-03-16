@@ -6,7 +6,9 @@ import { IoNewspaperSharp } from 'react-icons/io5'
 
 const Nav = () => {
 
-    const list = ['home', 'about', 'features', 'tokenomics', 'roadmap']
+    const list = ['about', 'utilities', 'tokenomics', 'roadmap']
+
+
     const [active, setActive] = useState(false)
 
     const setToggle = () => {
@@ -37,7 +39,7 @@ const Nav = () => {
             <motion.nav initial={{ opacity: 0 }} animate={{ opacity: 100 }} transition={{ duration: 0.7 }} className={`w-full h-auto lg:h-auto sm:px-10 px-3 sm:py-5 text-white z-[30] top-0 left-0 fixed ${scrolled ? "bg-hero py-3 border-b-[1px] border-b-white/[.20]" : ""}`}>
                 <div className="absolute w-full h-[120%] top-0 left-0 z-0 shadow-nav opacity-70 transition-all ease-in-out duration-300" style={scrolled ? {} : { opacity: "0%" }}></div>
                 <div className="max-w-[1600px] w-full h-auto flex items-center justify-between mx-auto z-10 relative">
-                    <a href="#home" className='flex items-center gap-x-3 m-4 transition-all ease-in-out duration-300' style={scrolled ? { margin: "0" } : {}}>
+                    <a href="/" className='flex items-center gap-x-3 m-4 transition-all ease-in-out duration-300' style={scrolled ? { margin: "0" } : {}}>
                         <img src="/logo.webp" alt="Logo" className="w-14 cursor-pointer" />
                         {/* <div className="h-10 w-10 bg-gradient-to-br from-myblue to-mypink rounded-full"></div> */}
                         <h1 className='font-saira font-bold text-2xl'>ShibaENS</h1>

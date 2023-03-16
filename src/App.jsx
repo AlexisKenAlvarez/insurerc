@@ -1,15 +1,9 @@
 import * as THREE from 'three'
 import NET from 'vanta/dist/vanta.net.min'
-
+import { Route, Routes } from 'react-router-dom';
 import React, { useEffect, useRef, useState } from 'react'
-import About from './views/About'
-import Utilities from './views/Utilities'
-import Hero from './views/Hero'
-import Tokenomics from './views/Tokenomics'
-import Roadmap from './views/Roadmap'
-import Nav from './components/Nav'
-import Footer from './views/Footer'
-
+import MainPage from './pages/MainPage';
+import Utility from './pages/Utility';
 
 
 const App = () => {
@@ -47,14 +41,13 @@ const App = () => {
             <div className="fixed w-full h-screen left-0 top-0 z-0" ref={myRef}>
 
             </div>
+            <Routes>
+                <Route path="/" element={<MainPage />}></Route>
+                <Route path="/utility/:id" element={<Utility />}></Route>
 
-            <Nav />
-            <Hero />
-            <About />
-            <Utilities />
-            <Tokenomics />
-            <Roadmap />
-            <Footer />
+
+            </Routes>
+
         </div>
     )
 }
