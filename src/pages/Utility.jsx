@@ -8,8 +8,8 @@ const Utility = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        console.log(id)
-    }, [])
+        window.scrollTo(0, 0)
+      }, [])
 
     const util = [
         {
