@@ -38,9 +38,9 @@ const Nav = () => {
                 <div className="absolute w-full h-[120%] top-0 left-0 z-0 shadow-nav opacity-70 transition-all ease-in-out duration-300" style={scrolled ? {} : { opacity: "0%" }}></div>
                 <div className="max-w-[1600px] w-full h-auto flex items-center justify-between mx-auto z-10 relative">
                     <a href="#home" className='flex items-center gap-x-3 m-4 transition-all ease-in-out duration-300' style={scrolled ? { margin: "0" } : {}}>
-                        {/* <img src="/logo.webp" alt="Logo" className="w-14 cursor-pointer" /> */}
-                        <div className="h-10 w-10 bg-gradient-to-br from-myblue to-mypink rounded-full"></div>
-                        <h1 className='font-saira font-bold text-2xl'>InsurERC</h1>
+                        <img src="/logo.webp" alt="Logo" className="w-14 cursor-pointer" />
+                        {/* <div className="h-10 w-10 bg-gradient-to-br from-myblue to-mypink rounded-full"></div> */}
+                        <h1 className='font-saira font-bold text-2xl'>ShibaENS</h1>
                     </a>
 
                     <ul className={`items-center flex lg:relative fixed right-0 lg:w-auto lg:h-auto w-full h-full top-0 justify-center lg:justify-start flex-col lg:flex-row bg-[#111111] lg:bg-transparent gap-y-12 text-xl lg:text-sm opacity-0 transition-all ease-in-out duration-300 lg:opacity-100 lg:pointer-events-auto pointer-events-none font-saira ${scrolled ? "gap-x-12" : "gap-x-16"}`} style={active ? { opacity: "100%", pointerEvents: "auto" } : {}}>
@@ -66,8 +66,8 @@ const Nav = () => {
                     {/* WHITE PAPER */}
 
                     <a href="" target="_blank" rel="noopener noreferrer">
-                        <button className="bg-button px-10 py-4 group rounded-md text-smfont-semibold font-poppins hover:shadow-buttonShadow relative transition-all ease-in-out duration-300 lg:block hidden" onClick={() => { setActive(false) }}>
-                            <div className="absolute w-full h-full bg-white left-0 top-0 rounded-md bg-gradient-to-br from-myblue to-mypink transition-all ease-in-out duration-300 opacity-0 pointer-events-none group-hover:opacity-100"></div>
+                        <button className="bg-mybrown px-10 py-4 group rounded-md font-semibold font-poppins hover:shadow-buttonShadow relative transition-all ease-in-out duration-300 lg:block hidden" onClick={() => { setActive(false) }}>
+                            <div className="absolute w-full h-full bg-white left-0 top-0 rounded-md bg-gradient-to-br from-mybrown to-mylight transition-all ease-in-out duration-300 opacity-0 pointer-events-none group-hover:opacity-100"></div>
                             <p className="relative z-10">Whitepaper</p>
                         </button>
                     </a>

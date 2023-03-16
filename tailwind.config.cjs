@@ -7,20 +7,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mypink: '#F604CC',
-        myblue: '#00FEE7',
+        mybrown: '#DB8F32',
+        mylight: '#F8E5C4',
         hero: '#171715',
         myorange: '#FEC336',
         mygrey: '#6E747D',
         button: '#3973F2',
-        buttonShadow: '#719DFF'
+        buttonShadow: '#DB8F32'
       },
       boxShadow: {
         pinkGlowTop: '0px 0px 70px 5px rgba(246,4,204,1)',
-        blueGlow: '0px 0px 35px 1px rgba(0,254,231,1)',
-        pinkGlow: '0px 0px 35px 1px rgba(246,4,204,1)',
-        buttonShadow: '5px 5px 0px 0px rgba(113,157,255,1)',
-        featureGlow: '0px 0px 70px -14px rgba(0,254,231,0.45)'
+        brownGlow: '0px 0px 35px 1px rgba(219, 143, 50, 1)',
+        lightGlow: '0px 0px 35px 1px rgba(248, 229, 196, 1)',
+        buttonShadow: '5px 5px 0px 0px rgba(219, 143, 50, 1)',
 
       },
       fontFamily: {

@@ -3,7 +3,7 @@ import NET from 'vanta/dist/vanta.net.min'
 
 import React, { useEffect, useRef, useState } from 'react'
 import About from './views/About'
-import Features from './views/Features'
+import Utilities from './views/Utilities'
 import Hero from './views/Hero'
 import Tokenomics from './views/Tokenomics'
 import Roadmap from './views/Roadmap'
@@ -30,9 +30,9 @@ const App = () => {
                 scaleMobile: 1.00,
                 color: 0xffffff,
                 backgroundColor: 0x111111,
-                points: 17.00,
+                points: 5.00,
                 maxDistance: 0.00,
-                spacing: 17.00
+                spacing: 20.00
 
             }))
         }
@@ -51,7 +51,7 @@ const App = () => {
             <Nav />
             <Hero />
             <About />
-            <Features />
+            <Utilities />
             <Tokenomics />
             <Roadmap />
             <Footer />
