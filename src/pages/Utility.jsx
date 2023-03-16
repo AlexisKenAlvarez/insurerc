@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import Nav from '../components/Nav'
 import { featureList } from '../utils/List'
+import Footer from '../views/Footer'
 
 const Utility = () => {
     const { id } = useParams()
@@ -116,6 +117,7 @@ const Utility = () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
     )
 }
