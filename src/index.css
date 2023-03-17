@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.toBrown {
+  filter: invert(77%) sepia(56%) saturate(500%) hue-rotate(335deg) brightness(90%) contrast(90%);
+}
+
 ::-webkit-scrollbar {
   width: 10px; /* width of the scrollbar */
 }

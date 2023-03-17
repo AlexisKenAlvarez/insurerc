@@ -59,7 +59,7 @@ const Hero = () => {
                     <motion.div initial={{ scale: 0.8, opacity: 0.8 }} animate={{ scale: 1, opacity: 100 }} transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", ease: "linear" }} className="z-0 w-4 h-4 bg-mylight rounded-full shadow-lightGlow absolute top-[30rem] left-[40%]"></motion.div>
                 </div>
 
-                <div className="mx-auto lg:px-20 px-10 flex mt-20 w-fit">
+                <div className="mx-auto lg:px-20 px-10 flex mt-20 w-fit gap-x-16">
                     <div className="w-full text-center lg:text-left relative z-10 lg:mt-10 2xl:mt-20">
                         <motion.h2 initial={{ opacity: 0, y: 100 }} animate={{ opacity: [0, 100], y: 0 }} transition={{ duration: 1.5, type: 'spring' }} className='uppercase text-myorange font-poppins font-medium 2xl:text-xl'>Your service is here</motion.h2>
                         <motion.h1 initial={{ opacity: 0, y: 100 }} animate={{ opacity: 100, y: 0 }} transition={{ duration: 1.5, type: 'spring', delay: 0.1 }} className='2xl:max-w-[50rem]  2xl:text-7xl md:text-6xl font-inter font-bold max-w-[33rem] mt-3 mx-auto lg:mx-0 text-5xl'>Decentralized domain system on ethereum</motion.h1>
@@ -77,7 +77,7 @@ const Hero = () => {
                     </div>
 
                     <div className="w-full lg:block hidden">
-                        <motion.img initial={{ scale: 0 }} animate={animation} src="/hero.webp" alt="Hero" className="w-[70vh] origin-bottom" />
+                        <motion.img initial={{ scale: 0 }} animate={animation} src="/hero.webp" alt="Hero" className="w-[60vh] origin-bottom" />
                     </div>
 
                 </div>
