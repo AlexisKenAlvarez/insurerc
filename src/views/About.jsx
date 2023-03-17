@@ -33,7 +33,7 @@ const About = () => {
                 <div className="w-[97%] lg:h-[94%] h-[97%] bg-hero flex lg:items-start p-10 relative flex-col items-center">
                     <div className="z-10 relative text-center md:text-left pb-8">
                         <motion.h2 initial={{ opacity: 0 }} animate={howView ? { opacity: 100, y: [50, 0] } : {}} transition={{ duration: 0.8 }} className='font-poppins text-myorange font-medium' ref={howRef}>How does it work?</motion.h2>
-                        <motion.h1 initial={{ opacity: 0 }} animate={titleView ? { opacity: 100, y: [50, 0] } : {}} transition={{ duration: 0.8 }} className='md:text-6xl font-bold text-4xl' ref={titleRef}>InsurERC</motion.h1>
+                        <motion.h1 initial={{ opacity: 0 }} animate={titleView ? { opacity: 100, y: [50, 0] } : {}} transition={{ duration: 0.8 }} className='md:text-6xl font-bold text-4xl' ref={titleRef}>ShibaENS</motion.h1>
 
                         <div className="overflow-hidden h-[20rem] py-2" ref={descRef}>
                             <motion.div initial={{ opacity: 0 }} animate={descView ? { opacity: 100, y: [50, 0] } : {}} transition={{ duration: 0.8 }} className="overflow-y-scroll h-full font-poppins max-w-[30rem] 2xl:max-w-[45rem] text-mygrey mt-3 flex flex-col gap-y-7 pr-2">
